@@ -1,0 +1,71 @@
+*{
+    font-size: 16px;
+}
+:root{
+    --robotoregular: "Roboto", sans-serif;
+    --robotomedium : "Roboto", sans-serif;
+    --darkblue : #262A4E;
+    --lightblue: #2370C8;
+}
+.top-box{
+    background-image: url(../images/backtop.png);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.logo h2{
+    font-size: 2em;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    color: white;
+}
+
+.head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+.top-nav ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-nav ul li{
+    margin-left: 2rem;
+}
+.top-nav ul li a{
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+}
+.header-info{
+    text-align: left;
+    padding: 10rem 0;
+}
+.text{
+    width: 20rem;
+}
+.header-info h1{
+    font-size: 3em;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    color: white;
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+}
+.header-info p{
+    font-family: var(--robotoregular);
+    color: white;
+    padding-bottom: 2rem;
+    line-height: 1.4;
+}
+.header-info-link a{
+    background-color: var(--lightblue);
+    color: white;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+}
