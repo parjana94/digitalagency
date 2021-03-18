@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Digital Agency</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
             <div class="logo">
                <a href="#"><h2>Logo.</h2></a> 
             </div>
-            <nav class="top-nav">
+            <nav class="top-nav" id="mytopnav">
                 <ul>
                    <li><a href="">Home</a></li>
                    <li><a href="">About</a></li>
@@ -29,8 +30,13 @@
                    <li><a href="">contact</a></li>
                 </ul>
             </nav>
+            
             <div class="search">
-                <input class="search-bar" placeholder="Search" type="text" >
+                <form action="">
+                    <input class="search-bar" placeholder="Search " type="text" >
+                    <button type="sumbit" class="search-button"><img src="/images/search.svg" alt="search"></button>
+                </form>
+                
             </div>
         </header>
         <div class="header-info container">
@@ -45,5 +51,37 @@
             </div>
         </div>
     </div>
+    <section class="container">
+        <div class="section-title">
+            <h3>OUR SERVICES</h3>
+            <h2>We Are Providing Digital services</h2>
+        </div>
+        <div class="services">
+            <a href="#">
+                <div class="service-box active">
+                    <img src="images/picspace.png" alt="picspace">
+                    <h3>web development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit, sed do eiusmodtempor
+                        incididunt ut labore et dolore</p>
+                </div>
+            </a>
+        <a href="#"> <div class="service-box">
+            <img src="images/picspace.png" alt="picspace">
+            <h3>Graphic Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmodtempor
+                incididunt ut labore et dolore</p>
+        </div></a>
+       <a href="#"><div class="service-box">
+        <img src="images/picspace.png" alt="picspace">
+        <h3>Digital Marketing</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmodtempor
+            incididunt ut labore et dolore</p>
+    </div></a>
+        
+    </div>
+    </section>
 </body>
 </html>

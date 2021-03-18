@@ -29,12 +29,14 @@
     padding-top: 2rem;
 }
 /*===NAVIGATION==*/
+
 .top-nav ul{
     display: flex;
     flex-wrap: wrap;
 }
 .top-nav ul li{
     margin-left: 2rem;
+    display: none;
 }
 .top-nav ul li a{
     font-family: var(--robotomedium);
@@ -48,17 +50,36 @@
 .top-nav ul li a:hover{
     color: var(--darkblue);
 }
+.icon{
+    position: absolute;
+    color: white;
+    top: 1rem;
+    left: 4.8rem;
+}
 
 /*===Search==*/
+.search{
+    position: relative;
+}
 .search-bar{
+    width: 10rem;
     border: none;
     border-radius: 2rem;
     padding: 0.7rem 1.5rem;
     outline: none;
     border: 2px solid var(--lightblue);
+    display: block;
 }
 .search-bar:focus{
     border: 2px solid var(--darkblue);
+}
+.search-button{
+    position: absolute;
+    right: 0.5rem;
+    top: 0.7rem;
+    background:none;
+    border: none;
+    cursor: pointer;
 }
 
 /*===HEADER INFO==*/
@@ -96,4 +117,70 @@
 }
 .header-info-link a:hover{
     background-color: var(--darkblue);
+}
+/*=== SERVICE SECTION */
+.section-title{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section-title h3{
+    font-size: 0.8em;
+    text-align: center;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--lightblue);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.section-title h2{
+    text-align: center;
+    color: var(--darkblue);
+    font-size: 2em;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+/*=== Services-grid */
+.services{
+    display: grid;
+    grid-column: 1fr;
+    grid-gap: 20px;
+}
+.service-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5F3FE;
+    border: 1px solid #CFEAFF;
+}
+.service-box img{
+    padding: 1.5rem 0;
+}
+.service-box h3{
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    color: var(--darkblue);
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.service-box p{
+    font-family: var(--robotoregular);
+    color: #646464;
+    font-size: 0.8em;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align:center;
+    width: 15rem;
+    line-height: 20px;
+}
+
+.active{
+    border:2px solid var(--lightblue);
+    background-color: white;
 }
