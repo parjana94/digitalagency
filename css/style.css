@@ -7,6 +7,7 @@
     --darkblue : #262A4E;
     --lightblue: #2370C8;
 }
+/*====Top Box===*/
 .top-box{
     background-image: url(../images/backtop.png);
 }
@@ -27,6 +28,7 @@
     align-items: center;
     padding-top: 2rem;
 }
+/*===NAVIGATION==*/
 .top-nav ul{
     display: flex;
     flex-wrap: wrap;
@@ -39,7 +41,27 @@
     font-weight: 500;
     color: white;
     text-transform: uppercase;
+    transition-property: all;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
 }
+.top-nav ul li a:hover{
+    color: var(--darkblue);
+}
+
+/*===Search==*/
+.search-bar{
+    border: none;
+    border-radius: 2rem;
+    padding: 0.7rem 1.5rem;
+    outline: none;
+    border: 2px solid var(--lightblue);
+}
+.search-bar:focus{
+    border: 2px solid var(--darkblue);
+}
+
+/*===HEADER INFO==*/
 .header-info{
     text-align: left;
     padding: 10rem 0;
@@ -68,4 +90,10 @@
     font-weight: 500;
     padding: 0.6rem 2rem;
     border-radius: 2rem;
+    transition-property: all;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+}
+.header-info-link a:hover{
+    background-color: var(--darkblue);
 }
