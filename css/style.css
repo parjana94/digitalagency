@@ -148,7 +148,7 @@
 .services{
     display: grid;
     grid-column: 1fr;
-    grid-gap: 20px;
+    grid-gap: 30px;
 }
 .service-box{
     display: flex;
@@ -183,4 +183,134 @@
 .active{
     border:2px solid var(--lightblue);
     background-color: white;
+    position: relative;
+    box-shadow: 0px 0px 15px -6px #2370C8;
+}
+.active-arrow{
+    position: absolute;
+    top: 78%;
+}
+.arrow{
+    position: absolute;
+    top: 89%;
+}
+.slider-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.left-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    background-color: #E0E0E0;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+.left-icon span{
+    color: #898989;
+}
+.right-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--lightblue);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+.right-icon span{
+    color: white;
+}
+/* ===About Section=== */
+.about-img{
+    display: none;
+}
+
+.about-us{
+    margin-top: 2rem;
+}
+
+.about-us h3{
+    font-size: 0.8em;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--lightblue);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.about-us h2{
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    color: var(--darkblue);
+    font-size: 2em;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.about-us p{
+    font-family: var(--robotoregular);
+    color: #646464;
+    font-size: 0.8em;
+    padding-bottom: 1.5rem;
+    width: 15rem;
+    line-height: 20px;
+}
+
+.about-us a{
+    background-color: var(--lightblue);
+    color: white;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    padding: 0.6rem 2rem;
+    border-radius: 2rem;
+    transition-property: all;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+}
+.about-us a:hover{
+    background-color: var(--darkblue);
+}
+
+/* ===Partnet Section=== */
+
+.back{
+    margin-top: 5rem;
+    background-color: #F2F9FF;
+}
+.boxes{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    background-color: #F2F9FF;
+    border: 2px solid white
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box img{
+    padding: 1.5rem 0;
+}
+.box h2{
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    color: var(--darkblue);
+    text-transform: capitalize;
+    text-align: center;
+}
+.box p{
+    font-family: var(--robotoregular);
+    color: #646464;
+    font-size: 0.8em;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    text-align:center;
+    width: 15rem;
+    line-height: 20px;
 }
