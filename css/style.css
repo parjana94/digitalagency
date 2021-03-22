@@ -393,6 +393,9 @@
     margin-top: 2rem;
     background-color: #F2F9FF;
 }
+.team-title{
+   padding-top: 2rem;
+}
 .team-section h2{
     color: var(--darkblue);
     font-size: 2em;
@@ -440,6 +443,7 @@
     width: 82%;
     height: 5rem;
     box-shadow: 3px 3px 5px -4px rgba(0,0,0,0.75);
+    background-color: white;
 }
 .prof p{
     color: #646464;
@@ -564,6 +568,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 30px;
+    padding-bottom: 3rem;
 }
 .trusted-box{
     margin-top: 2rem;
@@ -590,5 +595,127 @@
     font-family: var(--robotoregular);
     font-weight: 400;
     font-size: 0.6em;
+    line-height: 25px;
+}
+
+/* ===Blog=== */
+.blog-title h2{
+    color: var(--darkblue);
+    font-size: 2em;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 7px;
+}
+.blog-title h3{
+    font-size: 0.8em;
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--lightblue);
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+.blog{
+    margin-top: 2rem;
+}
+.blog-title h2::after{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 30%;
+    height: 2px;
+    background-color: var(--lightblue);
+    
+}
+.blog-text{
+    color: #646464;
+    font-family: var(--robotoregular);
     line-height: 20px;
+    font-size: 0.9em;
+    margin-bottom: 1rem;
+}
+#email{
+    padding: 0.4rem 2rem;  
+    width: 100%;
+    outline: none;
+}
+::placeholder{
+    font-family: var(--robotoregular);
+}
+.form{
+    position: relative;
+    width: 100%;
+}
+.submit{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    background-color: var(--lightblue);
+    color: white;
+    width: 3rem;
+    height: 100%;
+}
+.posts{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+}
+.post{
+    border: 1px solid var(--lightblue);
+    padding: 1.5rem 1.5rem 1.5rem 1rem;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+.post h2{
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    color:var(--darkblue);
+    font-size: 1.3em;
+    line-height: 25px;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+.post h3{
+    font-family: var(--robotomedium);
+    font-weight: 500;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: var(--lightblue);
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+.post p{
+    font-family: var(--robotoregular);
+    font-weight: 400;
+    color: #646464;
+    line-height: 25px;
+    font-size: 0.8em;
+    margin-bottom: 1rem;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+
+}
+.post a{
+    color: var(--lightblue);
+    font-family: var(--robotoregular);
+    font-weight: 400;
+    font-size: 1em;
+    margin-bottom: 5rem;
+    transition-delay: 0.2s;
+    transition-duration: 0.2s;
+}
+.post:hover{
+    background-color: var(--lightblue);
+}
+.post:hover h2,
+.post:hover h3,
+.post:hover p,
+.post:hover a{
+    color: white;
 }
